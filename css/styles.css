@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    color: purple;
+    font-size: 90px;
+    font-weight: 500px;
+    text-align: right;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.bg {
+    height: 500px;
+    width: 100%;
+    background-color: aqua;
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
