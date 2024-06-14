@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -9,6 +10,24 @@
 
 body {
     font-family: 'Times New Roman', Helvetica, sans-serif;
+}
+
+table, td, th {
+    border: 1px solid #000;
+}
+
+table tr:first-child {
+    background-color: steelblue;
+    color: #FFF;
+}
+
+table tr:nth-child(2n + 3) {
+    background-color: #AAA;
+}
+
+table {
+    font-size: 2.4rem;
+    border-collapse: separate;
 }
 
 h1 {
@@ -25,15 +44,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h2 {
-    font-size: 4.5rem;
+    font-size: 2.4rem;
 }
 
 .novo-em {
-    font-size: 300%
+    font-size: 300%;
 }
 
 .novo-em h2 {
-    font-size: 3.2em
+    font-size: 3.2em;
 }
 
 p {
@@ -64,4 +83,25 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+}
+
+ul, ol {
+    padding-left: 2.4rem;
+    font-size: 1.8rem;
+}
+
+.box {
+    height: 10rem;
+    width: 20rem;
+    margin: 1.5rem;
+    border: 10px solid red;
+    border-radius: 0.4rem ;
+    background-color: darkturquoise;
+    display: inline-block;
+}
+
+img {
+    height: 10rem;
+    width: 20rem;
+    object-fit: cover;
 }
