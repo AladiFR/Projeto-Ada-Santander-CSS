@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Times New Roman', Helvetica, sans-serif;
+}
+
+table, td, th {
+    border: 1px solid #000;
+}
+
+table tr:first-child {
+    background-color: steelblue;
+    color: #FFF;
+}
+
+table tr:nth-child(2n + 3) {
+    background-color: #AAA;
+}
+
+table {
+    font-size: 2.4rem;
+    border-collapse: separate;
+}
+
+h1 {
+    color: purple;
+    font-size: 7.0rem;
+    font-weight: 50.0rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Times New Roman','Courier New', Courier, monospace;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+.novo-em {
+    font-size: 300%;
+}
+
+.novo-em h2 {
+    font-size: 3.2em;
+}
+
+p {
+    font-size: 1.8rem;
+    text-align: justify;
+    text-indent: 90px;
+}
+
+a {
+    font-size: 2.4rem;
+    color: blue;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: coral;
+}
+
+.bg {
+    height: 20vh;
+    width: 100vw;
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+ul, ol {
+    padding-left: 2.4rem;
+    font-size: 1.8rem;
+}
+
+.menu {
+    position: fixed;
+    background-color: steelblue;
+    width: 100%;
+    height: 7rem;
+    z-index: 1;
+}
+
+.contact-list h2 {
+    top: 7rem;
+    position: sticky;
+    background-color: limegreen;
+}
+
+.boxes {
+    margin: 1.5rem;
+    position: relative;
+
+    display: none;
+    /* display:flex; */
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.box {
+    flex: 30%;
+    height: 10rem;
+    width: 20rem;
+    padding: 1.5rem;
+    border: 10px solid red;
+    color: #FFF;
+    border-radius: 0.4rem ;
+}
+
+.box p {
+    font-size: 5rem;
+}
+
+.box:nth-child(1) {
+    float: none;
+}
+
+.box + span {
+    display: none;
+}
+
+
+
+/* .box:nth-child(1) {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+} */
+
+/* .box:nth-child(2) {
+    position: fixed;
+} */
+
+.boxes p { 
+    display: inline;
+}
+
+img {
+    clear: both;
+    height: 10rem;
+    width: 14rem;
+    object-fit: cover;
+}
+
+a {
+    background-color: steelblue;
+    color: #FFF;
+    border: none;
+    font-size: 2.8rem;
+    padding: 0.6rem 2.4rem;
+    cursor: pointer;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease-in-out, background-color 1s ease-in-out;
+
+    display: block;
+}
+
+[data-anchor="products"]:hover {
+    background-color: aqua;
+    color: #FFF;
+    transform: scale(1.2);
+}
+
+[data-anchor="team"] {
+    margin-top: 2rem;
+    animation: pulse .2s infinite;
+    animation-direction: alternate;
+    transform: scale(1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.35);
+        opacity: .6;
+    }
+}
+
+.spinner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-spinner {
+    margin-top: 3rem;
+    margin: 4rem;
+    font-size: 5rem;
+    color: blueviolet;
+    animation: load 1s infinite;
+}
+
+@keyframes load {
+    0% {
+        transform: rotateX(0deg);
+    } 
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+ 
+[data-company] {
+    background-color: aqua;
+}
+
+@media screen and (min-width: 1000px) {
+    bg {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+    bg {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* table {
+        display: none;
+    }
+
+    h1 {
+        color: red;
+    } */
+}
+
+@media print {
+    bg {
+        display: none;
+    }
+}
